@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF5F7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Denuncias"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#C2185B"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnBuscarDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar por DNI"
+        android:backgroundTint="@color/baby_pink"
+        android:textColor="#880E4F"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva denuncia"
+        android:backgroundTint="@color/baby_pink"
+        android:textColor="#880E4F"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnPending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Denuncias Pendientes"
+        android:backgroundTint="@color/baby_pink"
+        android:textColor="#880E4F"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnAttended"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Denuncias Atendidas"
+        android:backgroundTint="@color/baby_pink"
+        android:textColor="#880E4F"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnLoadMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargar siguientes 5"
+        android:backgroundTint="@color/baby_pink"
+        android:textColor="#880E4F"
+        android:layout_marginTop="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>
